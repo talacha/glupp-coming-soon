@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>Glupp - Paletas heladas artesanales</title>
+    <meta name="description"
+        content="Paletas artesanales hechas con frutas naturales de temporada con amor y a un precio accesible.">
+    <link rel="canonical" href="https://www.glupp.mx/">
+    <link rel="canonical" href="http://www.glupp.mx/">
+    <link rel="canonical" href="https://glupp.mx/">
+    <link rel="canonical" href="http://glupp.mx/">
+    <meta name="robots" content="index, follow">
+    <meta property="og:image" content="https://glupp.mx/img/social.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <style>
-        /* CSS for the transition effect */
-        .fade-in {
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-
         /* You can add custom styles here if needed */
     </style>
 </head>
@@ -112,19 +116,22 @@
             // Function to load and rotate the next image
             function loadNextImage() {
                 // Manually list image filenames
+
+
                 const filenames = [
-                    "Grosella.jpeg",
-                    "Guayaba.jpeg",
-                    "Mandarina.jpeg",
-                    "Maracuya.jpeg",
-                    "Pina%20Tajin.jpeg",
-                    "Sandia.jpeg",
+                    "Grosella.webp",
+                    "Guayaba.webp",
+                    "Jamaica.webp",
+                    "Mandarina.webp",
+                    "Maracuya.webp",
+                    "Pina_Tajin.webp",
+                    "Sandia.webp"
                     // Add more filenames as needed
                 ];
 
                 const imgElement = document.querySelector('.slideshow');
                 // Set the source of the image to the next filename
-                imgElement.src = `img/rotate/${filenames[currentIndex]}`;
+                imgElement.src = `img/rotate/min/${filenames[currentIndex]}`;
 
                 // Increment the index or reset if it reaches the end
                 currentIndex = (currentIndex + 1) % filenames.length;
